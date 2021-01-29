@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800;900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.container {
+  /* padding: 0 26px; */
+}
+body {
+  overflow-x: hidden;
+}
+nav {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 96%;
+  margin-top: -20px;
+  z-index: 90;
+}
+.headerNav img {
+  max-width: 15em;
+  padding: 0;
+}
+.navbar {
+  margin-top: 70px;
+  z-index: 80;
+}
+.navbar a {
+  padding: 0 38px;
+  color: white;
+}
+.headerNav button {
+  border-radius: 40px;
+  width: 120px;
+  line-height: 40px;
+  margin-top: 4.4em;
+  cursor: pointer;
+  border: none;
+}
+.mobile i {
+  position: absolute;
+  color: white;
+  font-size: 2em;
+  float: right;
+  margin-top: 1.3em;
+  right: 0;
+  padding: 0 40px;
+  cursor: pointer;
+  display: none;
+  z-index: 90;
+}
+.backGround img {
+  min-height: 100vh;
+  top: 0;
+  z-index: -2;
+  overflow: hidden;
+}
+.showcase {
+  margin-top: 5em;
+}
+.mainText {
+  position: absolute;
+  top: 40%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 0px 80px;
+}
+.mainText h1 {
+  font-size: 3em;
+  text-transform: uppercase;
+}
+.mainText p {
+  line-height: 2em;
+}
+button a {
+  color: black;
+}
+/* image sizing */
+.showMain img {
+  width: 40em;
+}
+.showSecond img {
+  width: 30em;
+}
+.showThird img {
+  width: 25em;
+}
+/* Showcase positioning */
+.showMain {
+  display: flex;
+  align-items: center;
+  align-content: left;
+  max-width: 80%;
+}
+.showSecond {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: 220px;
+  margin-left: 80px;
+  max-width: 80%;
+}
+.showThird {
+  display: flex;
+  align-items: center;
+  margin-top: 220px;
+  margin-left: 140px;
+  max-width: 80%;
+  margin-bottom: 200px;
+}
+.showThird .showText {
+  margin-left: 40px;
+}
+/* footer positioning */
+footer {
+  background-color: rgb(97, 97, 97);
+}
+.mainFooter {
+  display: flex;
+  margin-left: 40px;
+  justify-content: space-between;
+}
+.social {
+  margin-top: 30px;
+  text-transform: uppercase;
+}
+.social i {
+  margin-top: 10px;
+  font-size: 30px;
+  padding: 0 20px;
+  color: white;
+}
+.infoList {
+  display: flex;
+  margin: 0 100px;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+.infoList ul {
+  list-style: none;
+  text-decoration: none;
+}
+.infoList h5 {
+  text-transform: uppercase;
+  font-size: 1.2em;
+}
+.firstList {
+  margin-right: 120px;
+}
+.secondList {
+  margin-right: 120px;
+}
+.lastSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.lastSection img {
+  max-width: 15em;
+}
+.lastSection button {
+  border-radius: 40px;
+  width: 120px;
+  line-height: 40px;
+  margin-right: 60px;
+  color: black;
+  cursor: pointer;
+  border: none;
+}
+@media only screen and (max-width: 1128px) {
+  .navbar {
+    position: absolute;
+    right: 0;
+    height: 50vh;
+    margin-top: 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 5%;
+    transform: translateX(300%);
+    transition: transform 0.5s;
+  }
+  .headerNav button {
+    margin-right: 60px;
+  }
+  .mainText {
+    position: absolute;
+    margin-top: 10em;
+    top: 20%;
+    max-height: 10em;
+  }
+  .mobile i {
+    display: inline;
+    cursor: pointer;
+  }
+  .backGround img {
+    right: 0;
+  }
+}
+@media only screen and (max-width: 1030px) {
+  .showMain {
+    flex-direction: column;
+  }
+  .showSecond {
+    flex-direction: column;
+  }
+  .showThird {
+    flex-direction: column;
+  }
+  .showText {
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    max-width: 80%;
+    margin-top: 80px;
+  }
+  .showMain .showText {
+    margin-left: 180px;
+  }
+  .showThird .showText {
+    margin-right: 120px;
+  }
+  .showMain img {
+    margin-left: 140px;
+  }
+  .showThird img {
+    margin-right: 100px;
+  }
+  .mainFooter {
+    flex-direction: column;
+  }
+  .infoList {
+    flex-direction: column;
+  }
+  .infoList ul {
+    padding: 10px;
+  }
+  .mainText {
+    position: absolute;
+    margin-top: 10em;
+    top: 0;
+    max-height: 10em;
+  }
+}
+.navbar-active {
+  transform: translateX(0%);
+}
